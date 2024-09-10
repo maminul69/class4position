@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{    
+width: 1140px;
+margin: 0 auto;
+}
+
+section{
+    width: 100%;
+    padding: 80px 0px;
+}
+
+/* DEshi flag sectio */
+.flag {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    margin-top: 30px;
+  
+    
+  }
+  
+  .red-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ff0000;
+  }
+  
+  .green-rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 150px;
+    background-color: #008000;
+    z-index: -1;
+  }
+
+  /* POSITON BOX */
+
+  .Ma{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background: rebeccapurple;
+   
+    
+  }
+
+  .Shishu{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 60px;
+    line-height: 100px;
+    color: white;
+   
+  }
+
+  .Chele1{
+    background: rgb(0, 0, 0);
+    right: 0;
+    bottom: -30px;
+    z-index:1; }
+
+  
+  
+  .Chele2{
+    background: darkorange;
+    z-index: 2 ;
+    left: 0px;
+    top: 0px;
+  }
+
+
+
+/* Social icons */
+ 
+ul li{
+    list-style-type:none;
+}
+
+
+
+
+.social-icons{
+    position:fixed;
+    right: -225px;
+    margin-top: 40px;
+    padding: 10px 0px;
+    text-align: center;
+    transition: 0.7s;
+    display: inline-block;
+
+}
+.social-icons:hover{
+  align-items: center;
+    right: 0px;
+    transition: 0.7s ease-in-out ;
+   
+}
+
+.social-icons ul{
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons ul li{
+
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 10px;
+      width: 40px;
+        height: 40px;
+        background: rgb(18, 99, 99);
+        color: black; 
+        line-height: 40px; 
+        -moz-border-radius: 100px;
+            -webkit-border-radius: 100px;
+            border-radius: 100px; 
+            transition: 0.4s;    
+}
+
+
+
+.social-icons ul li:hover{
+    right: 0px;
+            background: #000;
+            color: white;
+            -moz-border-radius: 100px;
+            -webkit-border-radius: 100px;
+            border-radius: 100px;
+           transition: 0.7s;
+            
+}
+
+.social-icons ul li a i{
+    color: white;
+    font-size: 18px;
+}
+
+.social-icons ul li:hover .fa{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+             
+
+
+/* Speech box */
+
+.parent{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background: cadetblue;
+   margin-top:50px !important;
+  
+
+}
+
+.child{
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    background: cadetblue;
+    bottom: -16px;
+    left: 28px;
+    transform: rotate(45deg);
+
+}
+
+
+
+
+/* Helped from Google to center all the element */
+[class]:not(.social-icons) {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+
+  .Ma, .parent, .child, .flag, .red-circle, .green-rectangle, .Shishu {
+    display: inline-block;
+  }
+
